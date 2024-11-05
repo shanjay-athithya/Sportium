@@ -68,7 +68,7 @@ export default function Events() {
                   alt={`${event.title} icon`}
                   width={200} // Set width for the icon
                   height={200} // Set height for the icon
-                  className="mx-auto" // Center the icon
+                  className="mx-auto"
                 />
               </div>
               <h4 className="text-2xl font-semibold mb-4 text-primaryOrange">
