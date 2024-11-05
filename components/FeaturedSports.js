@@ -81,7 +81,7 @@ export default function FeaturedSports() {
           {sports.map((sport) => (
             <div
               key={sport.id}
-              className="flex-shrink-0 w-[90vw] sm:w-[400px] md:w-[500px] h-[400px] sm:h-[500px] relative group rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 bg-darkGrey"
+              className="flex-shrink-0 w-[87vw] sm:w-[400px] md:w-[500px] h-[400px] sm:h-[500px] relative group rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 bg-darkGrey"
             >
               <div className="relative h-full overflow-hidden">
                 <Image

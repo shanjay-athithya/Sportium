@@ -31,9 +31,9 @@ export default function Gallery() {
   ];
 
   return (
-    <section className="bg-darkGrey py-16">
+    <section className="bg-primaryOrange py-16">
       <div className="container mx-auto px-6 text-center">
-        <h3 className="text-4xl font-extrabold text-primaryOrange mt-8 mb-12">
+        <h3 className="text-4xl font-extrabold text-darkGrey mt-8 mb-12">
           Club Highlights
         </h3>
         
@@ -44,7 +44,7 @@ export default function Gallery() {
               key={highlight.id}
               className="relative group flex-shrink-0 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
               style={{
-                width: '90vw', // Take up most of the viewport width on small screens
+                width: '87vw', // Take up most of the viewport width on small screens
                 maxWidth: '500px', // Limit width on larger screens
                 height: '400px', // Adjust height as needed
               }}
