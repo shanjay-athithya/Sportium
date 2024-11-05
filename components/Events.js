@@ -53,7 +53,7 @@ export default function Events() {
             <div
               key={event.id}
               className={`flex-shrink-0 bg-white rounded-lg p-6 shadow-lg transition duration-300 border-l-8 ${
-                event.isCurrent ? 'border-primaryOrange' : 'border-gray-600'
+                event.isCurrent ? 'border-primaryOrange' : 'border-gray-500'
               }`}
               style={{
                 width: '87vw', // Adjust for mobile

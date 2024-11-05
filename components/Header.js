@@ -9,7 +9,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-darkGrey text-white p-6">
+    <header className="bg-darkGrey text-white p-6 fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         
         {/* Logo and Club Name */}
