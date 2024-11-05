@@ -9,12 +9,12 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-darkGrey text-white p-4">
+    <header className="bg-darkGrey text-white p-6">
       <div className="container mx-auto flex justify-between items-center">
         
         {/* Logo and Club Name */}
         <div className="flex items-center space-x-2">
-          <img src="/images/logo.jpg" alt="Club Logo" className="w-10 h-10" />
+          <img src="/images/logo.jpg" alt="Club Logo" className="w-12 h-12" />
           <h1 className="text-2xl font-bold text-primaryOrange">Sportium</h1>
         </div>
 
