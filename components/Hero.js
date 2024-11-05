@@ -7,7 +7,7 @@ export default function Hero() {
       >
         <div className="container mx-auto text-center text-white px-4 md:px-0">
           <h2 className="text-4xl md:text-6xl font-bold mb-4">Welcome to the SSN Sportium</h2>
-          <p className="text-3xl font-bold text-darkGrey md:text-2xl mb-8">
+          <p className="text-3xl font-bold text-darkGrey md:text-xl sm:text-xl mb-8">
             Together we compete, Together we conquer
           </p>
           <div className="flex justify-center space-x-4">

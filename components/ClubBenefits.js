@@ -32,16 +32,16 @@ export default function ClubBenefits() {
   ];
 
   return (
-    <section className="bg-darkGrey py-16">
-      <div className="container mx-auto px-6 text-center">
-        <h3 className="text-4xl font-extrabold text-primaryOrange mb-12">
+    <section className="bg-primaryOrange py-16">
+      <div className="container mx-auto px-6 mt-10 mb-10 text-center">
+        <h3 className="text-4xl font-extrabold text-darkGrey mb-12">
           Why Join Our Club?
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
           {benefits.map((benefit) => (
             <div
               key={benefit.id}
-              className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300"
+              className="p-10 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300"
             >
               <div className="flex justify-center mb-4">
                 {benefit.icon}
