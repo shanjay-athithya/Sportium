@@ -7,9 +7,10 @@ import '../globals.css';
 import Head from '../../components/Team/head';
 import Event from '../../components/Team/event';
 import Market from '../../components/Team/market';
-import Treasury from '../../components/Team/treasurer';
+import Treasury from '../../components/Team/treasury';
 import Document from '../../components/Team/document';
 import Technical from '../../components/Team/technical';
+import Visual from '@/components/Team/visuals';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,16 +19,14 @@ export default function Home() {
 
   return (
     <>
-      
-        
-
       {/* Team Sections */}
       
       <div id="head"><Head /></div>
       <div id="event"><Event /></div>
       <div id="market"><Market /></div>
-      <div id="treasury"><Treasury /></div>
       <div id="documentation"><Document /></div>
+      <div id ="visuals"><Visual/></div>
+      <div id="treasury"><Treasury /></div>
       <div id="technical"><Technical /></div>
     </>
   );

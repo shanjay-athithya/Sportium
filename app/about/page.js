@@ -4,7 +4,7 @@ import { FaSmile, FaHeartbeat, FaUsers, FaTrophy } from "react-icons/fa";
 export default function AboutUs() {
   return (
     <main
-      className="bg-darkGrey text-white mt-[60px]" // Added margin-top to prevent overlap with header
+      className="bg-darkGrey text-white mt-20" // Added margin-top to prevent overlap with header
       style={{
         background:
           "linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))",
