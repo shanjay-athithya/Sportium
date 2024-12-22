@@ -71,8 +71,8 @@ export default function AboutUs() {
                 Friendly Competition
               </h3>
               <p className="text-white mt-4 text-center">
-                Whether you're a seasoned athlete or just love the thrill of the
-                game, there's a spot for you here.
+                Whether you are a seasoned athlete or just love the thrill of the
+                game, there is a spot for you here.
               </p>
             </div>
             <div>
@@ -93,7 +93,7 @@ export default function AboutUs() {
       <section className="py-12 text-center text-white">
         <h2 className="text-3xl font-bold">Ready to Join the Fun?</h2>
         <p className="text-lg mt-4">
-          Whether you're looking for intense competition or just an outlet to
+          Whether you are looking for intense competition or just an outlet to
           stay active, SPORTIUM has something for everyone.
         </p>
         <a
