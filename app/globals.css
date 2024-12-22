@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+
+/* styles/globals.css */
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+
+body {
+  font-family: 'Cinzel', serif;
+}
+
+.navbar {
+  font-family: 'Cinzel', serif;
+  color: #FFFFFF; /* White for contrast */
+  background-color: #333333; /* Dark grey/black for the header */
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.navbar a:hover {
+  color: #FFA500; /* Orange on hover */
+  border-bottom: 2px solid #FFA500; /* Optional underline effect */
+}
+
+.navbar .cta-button {
+  color: #FFFFFF;
+  background-color: #FFA500; /* Orange button */
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar .cta-button:hover {
+  background-color: #FF8C00; /* Darker orange on hover */
+}
+<<<<<<< HEAD
+=======
+/* Style for the hamburger menu */
+.menu-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Make sure the menu is above other content */
+}
+
+.hamburger-icon {
+  background-color: #d66117;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #d66117; /* Set the icon color to #d66117 */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  margin: 10px 0;
+}
+
+.dropdown-menu a {
+  color: #d66117;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 5px;
+}
+
+.dropdown-menu a:hover {
+  background-color: white;
+}
+
+
+
+>>>>>>> 67b14e2 (Initial commit)
