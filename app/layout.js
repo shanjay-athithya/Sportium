@@ -1,13 +1,6 @@
-
 import "./globals.css";
-<<<<<<< HEAD
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-=======
-import Header from "../components/Home/Header";
-import Footer from "../components/Home/Footer";
->>>>>>> 67b14e2 (Initial commit)
-
+import Header from "../components/Home/Header";  // Using the Header from the Home folder
+import Footer from "../components/Home/Footer";  // Using the Footer from the Home folder
 
 export const metadata = {
   title: "Sportium",

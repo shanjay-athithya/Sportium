@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
-
 /* styles/globals.css */
 .scrollbar-hide {
   scrollbar-width: none; /* Firefox */
@@ -12,7 +11,6 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
-
 
 body {
   font-family: 'Cinzel', serif;
@@ -47,8 +45,7 @@ body {
 .navbar .cta-button:hover {
   background-color: #FF8C00; /* Darker orange on hover */
 }
-<<<<<<< HEAD
-=======
+
 /* Style for the hamburger menu */
 .menu-container {
   position: fixed;
@@ -96,7 +93,3 @@ body {
 .dropdown-menu a:hover {
   background-color: white;
 }
-
-
-
->>>>>>> 67b14e2 (Initial commit)
