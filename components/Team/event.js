@@ -51,7 +51,7 @@ export default function Event() {
                         className="team-card w-full max-w-[320px] sm:max-w-[360px] h-auto sm:h-[400px] lg:h-[320px] mx-auto bg-primaryOrange rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 hover:border hover:border-opacity-90 hover:border-primaryOrange p-6"
                       >
                         <div className="flex justify-center mb-4">
-                          <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primaryOrange">
+                          <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-darkGrey">
                             <Image
                               src={member.image}
                               alt={member.name}
