@@ -4,7 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6d23ca00c32f9f637b1a55b81bd6beb19903e3c2
 /* styles/globals.css */
 .scrollbar-hide {
   scrollbar-width: none; /* Firefox */
@@ -13,7 +16,10 @@
   display: none; /* Safari and Chrome */
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6d23ca00c32f9f637b1a55b81bd6beb19903e3c2
 body {
   font-family: 'Cinzel', serif;
 }
@@ -47,3 +53,54 @@ body {
 .navbar .cta-button:hover {
   background-color: #FF8C00; /* Darker orange on hover */
 }
+<<<<<<< HEAD
+=======
+
+/* Style for the hamburger menu */
+.menu-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Make sure the menu is above other content */
+}
+
+.hamburger-icon {
+  background-color: #d66117;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #d66117; /* Set the icon color to #d66117 */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  margin: 10px 0;
+}
+
+.dropdown-menu a {
+  color: #d66117;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 5px;
+}
+
+.dropdown-menu a:hover {
+  background-color: white;
+}
+>>>>>>> 6d23ca00c32f9f637b1a55b81bd6beb19903e3c2
