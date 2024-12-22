@@ -4,10 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6d23ca00c32f9f637b1a55b81bd6beb19903e3c2
 /* styles/globals.css */
 .scrollbar-hide {
   scrollbar-width: none; /* Firefox */
@@ -16,10 +13,6 @@
   display: none; /* Safari and Chrome */
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 6d23ca00c32f9f637b1a55b81bd6beb19903e3c2
 body {
   font-family: 'Cinzel', serif;
 }
@@ -53,8 +46,8 @@ body {
 .navbar .cta-button:hover {
   background-color: #FF8C00; /* Darker orange on hover */
 }
-<<<<<<< HEAD
-=======
+
+
 
 /* Style for the hamburger menu */
 .menu-container {
@@ -103,4 +96,4 @@ body {
 .dropdown-menu a:hover {
   background-color: white;
 }
->>>>>>> 6d23ca00c32f9f637b1a55b81bd6beb19903e3c2
+

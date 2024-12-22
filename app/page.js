@@ -1,20 +1,4 @@
-<<<<<<< HEAD
-import './globals.css'
-import Hero from '../components/Hero'
-import FeaturedSports from '../components/FeaturedSports';
-import ClubBenefits from '../components/ClubBenefits';
-import Gallery from '../components/Gallery';
-import Events from '../components/Events';
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <FeaturedSports />
-      <ClubBenefits />
-      <Events />
-      <Gallery />
-=======
 'use client';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
@@ -48,7 +32,7 @@ export default function Home() {
         <Events />
       </div>
       <FeaturedSports />
->>>>>>> 6d23ca00c32f9f637b1a55b81bd6beb19903e3c2
+
     </>
   );
 }
