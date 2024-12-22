@@ -79,7 +79,7 @@ export default function Treasury() {
                    </div>
                  </div>
                  <h4 className="text-xl font-bold text-white mt-3 mb-1">{member.name}</h4>
-                 <p className="text-md font-bold text-darkGrey mb-4">{member.role}</p>
+                 <p className="text-xl font-bold text-darkGrey mb-2">{member.role}</p>
                  <p className="text-sm text-white">{member.year}</p>
                
                  {/* Social Icons: Initially Hidden */}

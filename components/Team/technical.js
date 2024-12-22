@@ -48,7 +48,7 @@ export default function Technical() {
                       </div>
                     </div>
                     <h4 className="text-xl font-bold text-white mt-3 mb-1">{member.name}</h4>
-                    <p className="text-xl font-semibold text-primaryOrange mb-4">{member.role}</p>
+                    <p className="text-xl font-semibold text-primaryOrange mb-2">{member.role}</p>
                     <p className="text-sm text-white">{member.year}</p>
                   </div>
                 ))}
