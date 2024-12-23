@@ -31,9 +31,9 @@ export default function Gallery() {
   ];
 
   return (
-    <section id = "gallery" className="bg-darkGrey py-16">
+    <section className="bg-primaryOrange py-16">
       <div className="container mx-auto px-6 text-center">
-        <h3 className="text-4xl font-extrabold text-primaryOrange mt-8 mb-12">
+        <h3 className="text-4xl font-extrabold text-darkGrey mt-8 mb-12">
           Club Highlights
         </h3>
         

@@ -7,7 +7,7 @@ export default function FeaturedSports() {
     {
       id: 1,
       name: "Cricket",
-      image: "/images/events/kick_off1.png",
+      image: "/images/cricket.jpg",
       description: "Experience the thrill of cricket with knockout and round-robin formats.",
       link: "/matches/cricket",
     },
@@ -70,9 +70,9 @@ export default function FeaturedSports() {
   ];
 
   return (
-    <section className="bg-primaryOrange py-16">
+    <section className="bg-darkGrey py-16">
       <div className="container mx-auto px-6 mb-12 text-center">
-        <h3 className="text-4xl font-extrabold text-darkGrey mb-12 mt-10">
+        <h3 className="text-4xl font-extrabold text-primaryOrange mb-12 mt-10">
           Explore Our Sports
         </h3>
         
@@ -102,7 +102,7 @@ export default function FeaturedSports() {
                 </p>
                 <Link href={sport.link}>
                   <button className="inline-block bg-primaryOrange text-white py-1 px-4 sm:py-2 sm:px-6 rounded-full font-bold hover:bg-orange-700 transition duration-200">
-                    Explore
+                    View Matches
                   </button>
                 </Link>
               </div>
