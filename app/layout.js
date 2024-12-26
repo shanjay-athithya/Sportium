@@ -6,8 +6,8 @@ import Footer from "../components/Home/Footer";  // Using the Footer from the Ho
 
 
 export const metadata = {
-  title: "Sportium",
-  description: "Official Sports Cub Of SSN",
+  title: "SSN Sportium",
+  description: "The Official Sports Club Of SSN",
 };
 
 export default function RootLayout({ children }) {

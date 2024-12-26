@@ -68,16 +68,16 @@ export default function Events() {
 
               {/* Content Section */}
               <div className="absolute bottom-0 w-full px-4 sm:px-6 py-2 sm:py-3 bg-primaryOrange bg-opacity-90 text-left h-[45%]">
-                <h4 className="text-lg sm:text-3xl font-bold text-white mb-3 sm:mb-3">
+                <h4 className="text-lg sm:text-3xl font-bold text-darkGrey mb-3 sm:mb-3">
                   {event.title}
                 </h4>
-                <p className="text-xl font-bold sm:text-md text-darkGrey mb-2">
+                <p className="text-md font-bold sm:text-md text-white mb-2">
                   Date: {event.dateRange}
                 </p>
-                <p className="text-md font-bold sm:text-md text-white mb-2">
+                <p className="text-md font-bold sm:text-md text-darkGrey mb-2">
                   {event.description}
                 </p>
-                <p className="text-md font-bold sm:text-md text-darkGrey mb-2">
+                <p className="text-md font-bold sm:text-md text-white mb-2">
                   Venue: {event.location}
                 </p>
                 <Link href={event.link}>
