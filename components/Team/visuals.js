@@ -7,12 +7,12 @@ export default function Visual() {
         "id": 4,
         "name": "Visuals & Design Team",
         "members": [
-          { "id": 0, "name": "Dhanushram", "role": "Head", "year": "3rd Year, EEE", "image": "/images/events/kick_off.jpg" },
-          { "id": 1, "name": "Adwin Jesusston", "role": "Sub Head", "year": "2nd Year, Chem", "image": "/images/events/kick_off.jpg" },
-          { "id": 2, "name": "Yukesh D", "role": "Designer", "year": "2nd Year, CSE", "image": "/images/events/kick_off.jpg" },
-          { "id": 3, "name": "Rahul Malai Kani", "role": "Designer", "year": "2nd Year, CSE", "image": "/images/events/kick_off.jpg" },
-          { "id": 4, "name": "Harshvant Raj M", "role": "Photographer", "year": "2nd Year, Chem", "image": "/images/events/kick_off.jpg" },
-          { "id": 5, "name": "Kiruthik", "role": "Photographer", "year": "1st Year, CSE", "image": "/images/events/kick_off.jpg" }
+          { "id": 0, "name": "Dhanushram", "role": "Head", "year": "3rd Year, EEE", "image": "https://drive.google.com/uc?export=view&id=16L1ysAFcQuIj_mnxTU5bxfK1-SLwcb1d" },
+          { "id": 1, "name": "Adwin Jesusston", "role": "Sub Head", "year": "2nd Year, Chem", "image":"https://drive.google.com/uc?export=view&id=1bG1AEp55QyjizahyO4-yPUPGrG-7Xivq"},
+          { "id": 2, "name": "Yukesh D", "role": "Designer", "year": "2nd Year, CSE", "image": "https://drive.google.com/uc?export=view&id=1gtyEbEy0RDFo6bkq9gqU_G59akFAz-0z" },
+          { "id": 3, "name": "Rahul Malai Kani", "role": "Designer", "year": "2nd Year, CSE", "image": "https://drive.google.com/uc?export=view&id=1KelhHR8JQyiGfVnRr8F31MNDSq1fec6h" },
+          { "id": 4, "name": "Harshvant Raj M", "role": "Photographer", "year": "2nd Year, Chem", "image": "https://drive.google.com/uc?export=view&id=1_HTpEJp5ropLbZHUe6tT9dCM4E14JLHt" },
+          { "id": 5, "name": "Kiruthik", "role": "Photographer", "year": "1st Year, CSE", "image": "https://drive.google.com/uc?export=view&id=1LoCyYv1NNrymupg3H5tAW0bxpR9gLmcZ" }
         ]
       } 
   ];
