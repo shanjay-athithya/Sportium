@@ -83,6 +83,7 @@ export default function Gallery() {
           }
           .animate-scroll {
             animation: scroll 20s linear infinite;
+            display: flex; /* Ensure flex container allows all items to scroll */
           }
         `}</style>
       </section>
