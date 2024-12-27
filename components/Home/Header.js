@@ -10,17 +10,17 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
 
-  const handleNavigation = (event) => {
+  const handleNavigation = (event, targetId) => {
     event.preventDefault(); // Prevent the default link behavior
     if (window.location.pathname === '/') {
       // Already on the home page, scroll to the section
-      const targetElement = document.getElementById('events');
+      const targetElement = document.getElementById(targetId);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
       // Navigate to the home page with the query parameter
-      router.push('/?scrollTo=events');
+      router.push(`/`); // You may want to handle scroll here differently
     }
   };
 
@@ -36,19 +36,20 @@ export default function Header() {
         {/* Navigation Links for Large Screens */}
         <nav className="hidden md:flex space-x-4">
           <Link href="/">Home</Link>
-          <a href="#events" onClick={handleNavigation}>
+          <a href="#events" onClick={(e) => handleNavigation(e, 'events')}>
             Events
           </a>
-
           <Link href="/teams">Teams</Link>
           <Link href="/about">About Us</Link>
-          <Link href="/contact">Contact</Link>
+          <a href="#contact" onClick={(e) => handleNavigation(e, 'contact')}>
+            Contact Us
+          </a>
         </nav>
 
         {/* Login Button for Large Screens */}
         <Link
           href="/login"
-          className="hidden md:block bg-primaryOrange text-white py-2 px-4 rounded font-bold"
+          className="hidden md:block bg-darkGrey text-darkGrey py-2 px-4 rounded font-bold"
         >
           Login
         </Link>
@@ -81,7 +82,7 @@ export default function Header() {
           <Link href="/" className="block">
             Home
           </Link>
-          <a href="#events" onClick={handleNavigation}>
+          <a href="#events" onClick={(e) => handleNavigation(e, 'events')} className="block mt-2">
             Events
           </a>
 
@@ -91,15 +92,10 @@ export default function Header() {
           <Link href="/about" className="block">
             About Us
           </Link>
-          <Link href="/contact" className="block">
-            Contact
-          </Link>
-          <Link
-            href="/login"
-            className="block bg-primaryOrange text-white py-2 px-4 rounded font-bold"
-          >
-            Login
-          </Link>
+          <a href="#contact" onClick={(e) => handleNavigation(e, 'contact')} className="block mt-2">
+            Contact Us
+          </a>
+          
         </nav>
       )}
     </header>

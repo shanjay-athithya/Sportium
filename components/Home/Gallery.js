@@ -1,68 +1,89 @@
 // components/Gallery.js
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Gallery() {
   const highlights = [
     {
       id: 1,
-      image: "/images/sports.jpg",
-      alt: "Football Match Celebration",
-      caption: "Celebrating a hard-fought football victory!",
+      image: "https://drive.google.com/uc?id=1RO3r5ReDE_sna-pvnviSCw0em3tTpcm-",
+      alt: "KICK OFF EVENT",
+      caption: "Winners Team",
     },
     {
       id: 2,
-      image: "/images/highlight2.jpg",
-      alt: "Cricket Tournament",
-      caption: "Our cricket team after winning the inter-college tournament.",
+      image: "https://drive.google.com/uc?id=1NU8d-S_gsq3umrw5eaXjUVK7R11_z1an",
+      alt: "KICK OFF EVENT",
+      caption: "Our trophy, a proud moment of hard work and teamwork!",
     },
     {
       id: 3,
-      image: "/images/highlight3.jpg",
-      alt: "Basketball Team",
-      caption: "Basketball squad ready for the big game!",
+      image: "https://drive.google.com/uc?id=17DFx1-Ezqg1SmuTraGFTNP89IxWESBt6",
+      alt: "KICK OFF EVENT",
+      caption: "Runner up",
     },
     {
       id: 4,
-      image: "/images/highlight4.jpg",
-      alt: "Badminton Winners",
-      caption: "Winners of the annual badminton championship.",
+      image: "https://drive.google.com/uc?id=1KXAmyPVtL4M8vR4FDgQEVRQhySRr55Ma",
+      alt: "KICK OFF EVENT",
+      caption: "The Champions",
     },
-    // Add more highlights as needed
+    {
+      id:5,
+      image:"https://drive.google.com/uc?id=1oQnovEFrV9P0KqHwZOEm6TRrF16_lhix",
+      alt:"SSN-Sportium",
+      caption:"Together we compete, Together we conquer",
+    }
   ];
 
   return (
-    <section id = "gallery" className="bg-darkGrey py-16">
+    <section id="gallery" className="bg-darkGrey py-16 overflow-hidden">
       <div className="container mx-auto px-6 text-center">
         <h3 className="text-4xl font-extrabold text-primaryOrange mt-8 mb-12">
           Club Highlights
         </h3>
-        
-        {/* Horizontal Scrollable Gallery */}
-        <div className="flex overflow-x-auto space-x-8 md:space-x-10 pb-4 scrollbar-hide">
-          {highlights.map((highlight) => (
-            <div
-              key={highlight.id}
-              className="relative group flex-shrink-0 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
-              style={{
-                width: '87vw', // Take up most of the viewport width on small screens
-                maxWidth: '500px', // Limit width on larger screens
-                height: '400px', // Adjust height as needed
-              }}
-            >
-              <Image
-                src={highlight.image}
-                alt={highlight.alt}
-                layout="fill"
-                objectFit="cover"
-                className="transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center text-white text-lg font-bold px-4 text-center">
-                {highlight.caption}
+
+        {/* Horizontal Scrollable Animated Gallery */}
+        <div className="relative w-full overflow-hidden">
+          <div className="flex animate-scroll space-x-8">
+            {highlights.map((highlight) => (
+              <div
+                key={highlight.id}
+                className="relative flex-shrink-0 rounded-lg overflow-hidden shadow-lg"
+                style={{
+                  width: "300px",
+                  height: "400px",
+                }}
+              >
+                <Image
+                  src={highlight.image}
+                  alt={highlight.alt}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center text-white text-lg font-bold px-4 text-center">
+                  {highlight.caption}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
+
+      {/* Add keyframes animation */}
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+        .animate-scroll {
+          animation: scroll 20s linear infinite;
+        }
+      `}</style>
     </section>
   );
 }

@@ -11,10 +11,10 @@ export default function Hero() {
             Together we compete, Together we conquer
           </p>
           <div className="flex justify-center space-x-4">
-            <button className="bg-transparent border border-white py-3 px-6 rounded font-bold hover:bg-white hover:text-primaryOrange transition duration-200">
+            <button className="bg-transparent border border-white py-3 px-6 rounded font-bold hover:bg-white hover:text-primaryOrange transition duration-200" onClick={() => window.open('https://chat.whatsapp.com/B9hg9wvlMTh87AeRomHK8U', '_blank')}>
               Join the Club
             </button>
-            <button className="bg-transparent border border-white py-3 px-6 rounded font-bold hover:bg-white hover:text-primaryOrange transition duration-200">
+            <button className="bg-transparent border border-white py-3 px-6 rounded font-bold hover:bg-white hover:text-primaryOrange transition duration-200" onClick={()=>window.location.href="/about"}>
               Learn More
             </button>
           </div>

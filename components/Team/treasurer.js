@@ -12,7 +12,7 @@ export default function Treasury() {
           name: "Vedhanth Keshav",
           role: "Head",
           year: "4th Year, Mech",
-          image: "/images/events/kick_off.jpg",
+          image: "https://drive.google.com/uc?export=view&id=13JR80OKKZ7bUHzuwmeII9UKdosXHcgNc",
           email: "vedhanth.keshav@example.com",
           linkedin: "https://linkedin.com/in/vedhanth-keshav",
         },
@@ -21,7 +21,7 @@ export default function Treasury() {
           name: "Sanjay Sukumar M",
           role: "Sub Head",
           year: "3rd Year, ECE",
-          image: "/images/events/kick_off.jpg",
+          image: "https://drive.google.com/uc?export=view&id=19qJjhHCTDGt5V0ouZS5M7GqH3W25ec3U",
           email: "sanjay.sukumar@example.com",
           linkedin: "https://linkedin.com/in/sanjay-sukumar",
         },
@@ -30,7 +30,7 @@ export default function Treasury() {
           name: "Tarun Suresh",
           role: "CCM",
           year: "2nd Year, M Tech",
-          image: "/images/events/kick_off.jpg",
+          image: "https://drive.google.com/uc?export=view&id=1EvBmRI19F__fSeosvdaG-iZ4yx4_81tE",
           email: "tarun.suresh@example.com",
           linkedin: "https://linkedin.com/in/tarun-suresh",
         },
@@ -39,7 +39,7 @@ export default function Treasury() {
           name: "Sanjai Kumaar",
           role: "CCM",
           year: "2nd Year, Mech",
-          image: "/images/events/kick_off.jpg",
+          image: "https://drive.google.com/uc?export=view&id=1VkcMGxpIj9Wis7k7J9anQxxjHjhoq29-",
           email: "sanjai.kumaar@example.com",
           linkedin: "https://linkedin.com/in/sanjai-kumaar",
         },
@@ -51,10 +51,8 @@ export default function Treasury() {
     <main>
       <section
         id="team"
-        className="bg-darkGrey bg-opacity-80 py-16 relative"
-        style={{
-          background: "linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))",
-        }}
+        className="bg-darkGrey  py-16 relative"
+    
       >
         <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className="text-4xl font-extrabold text-primaryOrange mb-16">
@@ -67,21 +65,21 @@ export default function Treasury() {
                 {team.members.map((member) => (
                  <div
                  key={member.id}
-                 className="team-card w-full max-w-[320px] sm:max-w-[360px] h-auto sm:h-[400px] lg:h-[350px] mx-auto bg-darkGrey rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 hover:border hover:border-opacity-90 hover:border-primaryOrange p-6 group"
+                 className="team-card w-full max-w-[320px] sm:max-w-[360px] h-auto sm:h-[400px] lg:h-[350px] mx-auto bg-primaryOrange rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 hover:border hover:border-opacity-90 hover:border-primaryOrange p-6 group"
                >
                  <div className="flex justify-center mb-4">
-                   <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primaryOrange">
+                   <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-darkGrey">
                      <Image
                        src={member.image}
                        alt={member.name}
-                       width={150}
-                       height={150}
+                       width={158}
+                       height={148}
                        className="object-cover"
                      />
                    </div>
                  </div>
                  <h4 className="text-xl font-bold text-white mt-3 mb-1">{member.name}</h4>
-                 <p className="text-md font-semibold text-primaryOrange mb-4">{member.role}</p>
+                 <p className="text-xl font-bold text-darkGrey mb-2">{member.role}</p>
                  <p className="text-sm text-white">{member.year}</p>
                
                  {/* Social Icons: Initially Hidden */}

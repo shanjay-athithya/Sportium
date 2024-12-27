@@ -1,35 +1,35 @@
 // components/Footer.js
 
 import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer id= "foot" className="bg-darkGrey py-6">
+    <footer id= "contact" className="bg-darkGrey py-6">
       <div className="container mx-auto px-6 text-center">
         <div className="mb-4">
           <h4 className="text-white font-semibold mb-2">Connect with Us</h4>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://www.facebook.com"
+              href="https://chat.whatsapp.com/B9hg9wvlMTh87AeRomHK8U"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primaryOrange hover:text-white flex items-center"
             >
-              <FaFacebookF className="mr-2" />
-              Facebook
+              <FaWhatsapp className="mr-2" />
+              Whatsapp
             </a>
             <a
-              href="https://www.twitter.com"
+              href="https://www.linkedin.com/company/ssn-sportium/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primaryOrange hover:text-white flex items-center"
             >
-              <FaTwitter className="mr-2" />
-              Twitter
+              <FaLinkedin className="mr-2" />
+              Linkedin
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/sportium_ssn?igsh=NmN3OGltc29oNWxj"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primaryOrange hover:text-white flex items-center"
