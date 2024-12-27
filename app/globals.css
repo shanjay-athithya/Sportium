@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
+
 /* styles/globals.css */
 .scrollbar-hide {
   scrollbar-width: none; /* Firefox */
@@ -13,7 +14,7 @@
 }
 
 body {
-  font-family: 'Cinzel', serif;
+  font-family: 'EB Garamond', serif;
 }
 
 .navbar {
@@ -45,6 +46,8 @@ body {
 .navbar .cta-button:hover {
   background-color: #FF8C00; /* Darker orange on hover */
 }
+
+
 
 /* Style for the hamburger menu */
 .menu-container {
@@ -93,3 +96,4 @@ body {
 .dropdown-menu a:hover {
   background-color: white;
 }
+

@@ -24,14 +24,17 @@ export default function Head() {
           {teams.map((team) => (
             <div key={team.id} className="mb-16">
               <h1 className="text-4xl font-extrabold text-darkGrey mb-16">
-                Club Heads
+            Club Heads
+
               </h1>
               <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {team.members.map((member) => (
                   <div
+
                     key={member.id}
                     className="team-card w-full max-w-[320px] sm:max-w-[360px] h-auto sm:h-[400px] lg:h-[320px] mx-auto bg-darkGrey rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 hover:border hover:border-opacity-90 hover:border-primaryOrange p-6"
                   >
+
                     <div className="flex justify-center mb-4">
                       <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primaryOrange">
                         <Image

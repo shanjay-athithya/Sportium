@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+
+
 const nextConfig = {
   swcMinify: false, // Disable SWC-based minification
   experimental: {
@@ -8,5 +10,6 @@ const nextConfig = {
     domains: ['drive.google.com'], // Add 'drive.google.com' here
   },
 };
+
 
 export default nextConfig;

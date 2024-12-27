@@ -25,12 +25,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Gallery />
+      <FeaturedSports />
       <ClubBenefits />
       <div id="events">
         <Events />
       </div>
-      <FeaturedSports />
+      <Gallery />
     </>
   );
 }

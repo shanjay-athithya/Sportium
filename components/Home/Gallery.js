@@ -28,62 +28,64 @@ export default function Gallery() {
       caption: "The Champions",
     },
     {
-      id:5,
-      image:"https://drive.google.com/uc?id=1oQnovEFrV9P0KqHwZOEm6TRrF16_lhix",
-      alt:"SSN-Sportium",
-      caption:"Together we compete, Together we conquer",
-    }
+      id: 5,
+      image: "https://drive.google.com/uc?id=1oQnovEFrV9P0KqHwZOEm6TRrF16_lhix",
+      alt: "SSN-Sportium",
+      caption: "Together we compete, Together we conquer",
+    },
   ];
 
   return (
-    <section id="gallery" className="bg-darkGrey py-16 overflow-hidden">
-      <div className="container mx-auto px-6 text-center">
-        <h3 className="text-4xl font-extrabold text-primaryOrange mt-8 mb-12">
-          Club Highlights
-        </h3>
+    <section id="gallery" className="bg-darkGrey py-16">
+      <section className="bg-primaryOrange py-16">
+        <div className="container mx-auto px-6 text-center">
+          <h3 className="text-4xl font-extrabold text-darkGrey mt-8 mb-12">
+            Club Highlights
+          </h3>
 
-        {/* Horizontal Scrollable Animated Gallery */}
-        <div className="relative w-full overflow-hidden">
-          <div className="flex animate-scroll space-x-8">
-            {highlights.map((highlight) => (
-              <div
-                key={highlight.id}
-                className="relative flex-shrink-0 rounded-lg overflow-hidden shadow-lg"
-                style={{
-                  width: "300px",
-                  height: "400px",
-                }}
-              >
-                <Image
-                  src={highlight.image}
-                  alt={highlight.alt}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center text-white text-lg font-bold px-4 text-center">
-                  {highlight.caption}
+          {/* Horizontal Scrollable Animated Gallery */}
+          <div className="relative w-full overflow-hidden">
+            <div className="flex animate-scroll space-x-8 group">
+              {highlights.map((highlight) => (
+                <div
+                  key={highlight.id}
+                  className="relative flex-shrink-0 rounded-lg overflow-hidden shadow-lg"
+                  style={{
+                    width: "300px",
+                    height: "400px",
+                  }}
+                >
+                  <Image
+                    src={highlight.image}
+                    alt={highlight.alt}
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center text-white text-lg font-bold px-4 text-center">
+                    {highlight.caption}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Add keyframes animation */}
-      <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
+        {/* Add keyframes animation */}
+        <style jsx>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
           }
-          100% {
-            transform: translateX(-100%);
+          .animate-scroll {
+            animation: scroll 20s linear infinite;
           }
-        }
-        .animate-scroll {
-          animation: scroll 20s linear infinite;
-        }
-      `}</style>
+        `}</style>
+      </section>
     </section>
   );
 }

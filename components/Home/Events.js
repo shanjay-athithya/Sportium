@@ -71,17 +71,17 @@ export default function Events() {
                 <h4 className="text-lg sm:text-3xl font-bold text-darkGrey mb-3 sm:mb-3">
                   {event.title}
                 </h4>
-                <p className="text-md sm:text-md text-white mb-2">
+                <p className="text-md font-bold sm:text-md text-white mb-2">
                   Date: {event.dateRange}
                 </p>
-                <p className="text-md sm:text-md text-white mb-2">
+                <p className="text-md font-bold sm:text-md text-darkGrey mb-2">
                   {event.description}
                 </p>
-                <p className="text-md sm:text-md text-white mb-2">
-                  Location: {event.location}
+                <p className="text-md font-bold sm:text-md text-white mb-2">
+                  Venue: {event.location}
                 </p>
                 <Link href={event.link}>
-                  <button className="inline-block bg-primaryOrange text-darkGrey py-1 px-4 sm:py-2 sm:px-6 rounded-full font-bold hover:bg-darkGrey-light transition duration-200">
+                  <button className="inline-block text-primaryOrange bg-darkGrey py-1 px-4 sm:py-2 sm:px-6 rounded-full font-bold hover:bg-white text-primaryOrange transition duration-200">
                     Explore
                   </button>
                 </Link>
