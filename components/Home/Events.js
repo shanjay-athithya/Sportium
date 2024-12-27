@@ -36,7 +36,7 @@ export default function Events() {
   ];
 
   return (
-    <section id="events"  className="bg-darkGrey py-16">
+    <section id="events" className="bg-darkGrey py-16">
       <div className="container mx-auto px-6 p-10 text-center">
         <h3 className="text-4xl font-extrabold text-primaryOrange mb-16">
           Events
@@ -52,7 +52,7 @@ export default function Events() {
           {events.map((event) => (
             <div
               key={event.id}
-              className="flex-shrink-0 w-[87vw] sm:w-[400px] md:w-[500px] h-[450px] sm:h-[500px] relative group rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 bg-darkGrey"
+              className="flex-shrink-0 w-[90vw] sm:w-[400px] md:w-[500px] h-[500px] sm:h-[500px] md:h-[450px] relative group rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 bg-darkGrey"
             >
               {/* Image Section */}
               <div className="relative h-[75%] overflow-hidden">
