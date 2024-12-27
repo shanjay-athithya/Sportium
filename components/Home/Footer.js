@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="mb-4">
           <h4 className="text-white font-semibold mb-2">Quick Links</h4>
           <div className="flex justify-center space-x-6">
-            <Link href="/about" className="text-primaryOrange hover:text-white">
+            <Link href="/about" className="text-primaryOrange hover:text-white sm:text-md">
               About Us
             </Link>
             <Link href="#events" className="text-primaryOrange hover:text-white">
@@ -51,9 +51,7 @@ export default function Footer() {
             <Link href="#gallery" className="text-primaryOrange hover:text-white">
               Gallery
             </Link>
-            <Link href="#foot" className="text-primaryOrange hover:text-white">
-              Contact Us
-            </Link>
+            
           </div>
         </div>
         <p className="text-gray-300 text-sm">
