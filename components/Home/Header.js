@@ -1,9 +1,7 @@
-// components/Header.js
-
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   // State to toggle the mobile menu
@@ -12,12 +10,15 @@ export default function Header() {
 
   const handleNavigation = (event, targetId) => {
     event.preventDefault(); // Prevent the default link behavior
-    if (window.location.pathname === '/') {
+    if (window.location.pathname === "/" && targetId === "events") {
       // Already on the home page, scroll to the section
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
+        targetElement.scrollIntoView({ behavior: "smooth" });
       }
+    } else if (window.location.pathname === "/Contact-Us") {
+      // If on the Contact Us page, do not navigate
+      return;
     } else {
       // Navigate to the home page with the query parameter
       router.push(`/`); // You may want to handle scroll here differently
@@ -36,14 +37,16 @@ export default function Header() {
         {/* Navigation Links for Large Screens */}
         <nav className="hidden md:flex space-x-4">
           <Link href="/">Home</Link>
-          <a href="#events" onClick={(e) => handleNavigation(e, 'events')}>
+          <a href="#events" onClick={(e) => handleNavigation(e, "events")}>
             Events
           </a>
           <Link href="/teams">Teams</Link>
           <Link href="/about">About Us</Link>
-          <a href="#contact" onClick={(e) => handleNavigation(e, 'contact')}>
-            Contact Us
-          </a>
+          {router.pathname !== "/Contact-Us" && (
+            <Link href="/Contact-Us" className="block">
+              Contact Us
+            </Link>
+          )}
         </nav>
 
         {/* Login Button for Large Screens */}
@@ -82,7 +85,7 @@ export default function Header() {
           <Link href="/" className="block">
             Home
           </Link>
-          <a href="#events" onClick={(e) => handleNavigation(e, 'events')} className="block mt-2">
+          <a href="#events" onClick={(e) => handleNavigation(e, "events")} className="block mt-2">
             Events
           </a>
 
@@ -92,10 +95,11 @@ export default function Header() {
           <Link href="/about" className="block">
             About Us
           </Link>
-          <a href="#contact" onClick={(e) => handleNavigation(e, 'contact')} className="block mt-2">
-            Contact Us
-          </a>
-          
+          {router.pathname !== "/Contact-Us" && (
+            <Link href="/Contact-Us" className="block">
+              Contact Us
+            </Link>
+          )}
         </nav>
       )}
     </header>
