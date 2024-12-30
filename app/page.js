@@ -7,7 +7,7 @@ import FeaturedSports from '../components/Home/FeaturedSports';
 import ClubBenefits from '../components/Home/ClubBenefits';
 import Gallery from '../components/Home/Gallery';
 import Events from '../components/Home/Events';
-import ContactUs from '@/components/ContactUs';
+
 
 export default function Home() {
   const router = useRouter();

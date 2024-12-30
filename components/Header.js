@@ -24,7 +24,7 @@ export default function Header() {
           <Link href="/matches">Matches</Link>
           <Link href="/teams">Teams</Link>
           <Link href="/about">About Us</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/Contact-Us">Contact</Link>
         </nav>
 
         {/* Login Button for Large Screens */}
@@ -56,7 +56,7 @@ export default function Header() {
           <Link href="/matches" className="block">Matches</Link>
           <Link href="/teams" className="block">Teams</Link>
           <Link href="/about" className="block">About Us</Link>
-          <Link href="/contact" className="block">Contact</Link>
+          <Link href="/Contact-Us" className="block">Contact</Link>
           <Link href="/login" className="block bg-primaryOrange text-white py-2 px-4 rounded font-bold">
             Login
           </Link>
