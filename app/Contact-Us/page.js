@@ -52,7 +52,7 @@ export default function ContactUs() {
     const userID = "LQlN1nMISqn7SrhOA";
     const params = {
       ...formData,
-      to_email: "kameshnic2885@gmail.com",
+      to_email: "sportiumssn@gmail.com",
     };
 
     emailjs
