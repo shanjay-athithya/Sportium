@@ -11,7 +11,7 @@ export default function Events() {
       location: "Basketball court , Hostel",
       isCurrent: true,
       icon: "/images/events/kick_off1.png",
-      link: "/matches/table-tennis",
+      link: "/ShowDetails",
     },
     {
       id: 2,
@@ -80,9 +80,14 @@ export default function Events() {
                 <p className="text-md font-bold sm:text-md text-white mb-2">
                   Venue: {event.location}
                 </p>
-                <Link href={event.link}>
+                <Link href="">
                   <button className="inline-block text-primaryOrange bg-darkGrey py-1 px-4 sm:py-2 sm:px-6 rounded-full font-bold hover:bg-white text-primaryOrange transition duration-200">
-                    Explore
+                    Register
+                  </button>
+                </Link>
+                 <Link href={event.link}>
+                  <button className="ml-2 inline-block text-primaryOrange bg-darkGrey py-1 px-4 sm:py-2 sm:px-6 rounded-full font-bold hover:bg-white text-primaryOrange transition duration-200">
+                    Show Details
                   </button>
                 </Link>
               </div>
